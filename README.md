@@ -68,4 +68,11 @@ By default, access to the Manager and Host Manager section is restricted to the 
       
 Now click on the ‘Server Status‘ tab, it will prompt you to enter user credentials, enter username and password that you’ve added above in the config file.
 
+# Changing Apache Tomcat Port
+If you want to run Tomcat on different port say 80 port. You will have to edit the ‘server.xml‘ file in ‘/opt/tomcat9/conf/‘. Before changing, port, make sure to stop the Tomcat server using.
+
+            /usr/local/tomcat9/bin/shutdown.sh
+            vi /usr/local/tomcat9/conf/server.xml ( change 8080 to 80)
+            /usr/local/tomcat9/bin/startup.sh
+            
 https://www.tecmint.com/install-apache-tomcat-in-centos/
